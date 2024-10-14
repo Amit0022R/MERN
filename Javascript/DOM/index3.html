@@ -1,0 +1,72 @@
+
+
+<body>
+    
+<input type="text">
+<button onclick="addTodo()" >Add TODO!</button>
+
+    
+    <script>
+
+function addTodo() {
+        // alert("hi there");
+
+    const value = document.querySelector("input").value;    
+
+    // const newTodoDivEl = document.createElement("div");
+    // newTodoDivEl.innerHTML  = "<div>" + value + "</div><button> Delete </button>";  
+
+    const spanEl = document.createElement("span");
+    const buttonEl = document.createElement("button");
+    spanEl.innerHTML = value; 
+    buttonEl.innerHTML = "Delete";
+
+    // want to append both spanEl and buttonEl to div and div to body
+
+    const divEl = document.createElement("div");
+    divEl.appendChild(spanEl);
+    divEl.appendChild(buttonEl);
+
+    document.querySelector("body").appendChild(divEl);
+
+    }
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
